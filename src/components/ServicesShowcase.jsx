@@ -25,7 +25,14 @@ const services = [
 export default function ServicesShowcase() {
   return (
     <section className="relative bg-[#4E7D4F] text-white py-14 md:py-20 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* Grass background image at bottom */}
+      <img
+        src="/grass.png" // replace with your actual grass image path
+        alt="grass background"
+        className="absolute bottom-0 left-0 w-full h-24 object-cover z-0"
+      />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="flex items-center justify-between">
           <div>
@@ -44,19 +51,25 @@ export default function ServicesShowcase() {
           </div>
         </div>
 
-        
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
           {services.map((s) => (
-            <article key={s.title} className="group relative rounded-[22px] bg-white text-green-900 shadow-sm overflow-hidden pb-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-amber-200/70">
+            <article
+              key={s.title}
+              className="group relative rounded-[22px] bg-white text-green-900 shadow-sm overflow-hidden pb-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-amber-200/70"
+            >
               <div className="h-60 w-full overflow-hidden">
-                <img src={s.img} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img
+                  src={s.img}
+                  alt=""
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-5">
                 <span className="text-[11px] uppercase tracking-wide text-amber-600">• {s.tag}</span>
                 <h3 className="mt-1 text-lg font-semibold">{s.title}</h3>
                 <p className="mt-1 text-sm text-neutral-600">{s.desc}</p>
               </div>
-              
+
               <div className="absolute bottom-3 right-4 h-9 w-9 rounded-full bg-amber-400 text-white grid place-items-center hover:bg-amber-300 transition-all duration-300 group-hover:translate-y-[-2px] z-20">
                 <FiArrowUpRight size={16} />
               </div>

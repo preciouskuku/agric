@@ -13,13 +13,10 @@ import History from '../components/History'
 import CtaBanner from '../components/CtaBanner'
 import LatestBlog from '../components/LatestBlog'
 import Footer from '../components/Footer'
-// import Services from '../components/Services'
-// import Products from '../components/Products'
-// import WhyChooseUs from '../components/WhyChooseUs'
+
 import Testimonials from '../components/Testimonials'
-// import Stats from '../components/Stats'
-// import CTA from '../components/CTA'
-// import Blog from '../components/Blog'
+
+
 
 export default function Home() {
   return (
