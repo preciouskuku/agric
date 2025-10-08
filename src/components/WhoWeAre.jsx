@@ -1,5 +1,4 @@
 import React from 'react'
-import { FiGlobe, FiSettings, FiTruck } from 'react-icons/fi'
 
 export default function WhoWeAre() {
   return (
@@ -11,70 +10,102 @@ export default function WhoWeAre() {
             100% { transform: translateX(-50%); }
           }
         `}</style>
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
+          {/* Left Image Section */}
           <div className="relative">
             <img
               className="rounded-[28px] object-cover w-full h-[340px] md:h-[440px]"
               src="/who.jpg"
-              alt="Farmer at work" />
+              alt="Farmer at work"
+            />
             <div className="absolute bottom-2 right-2">
               <div className="relative">
                 <div className="absolute -inset-3 bg-[#F6F7EE] rounded-tl-2xl rounded-br-2xl rounded-tr-none rounded-bl-none" aria-hidden></div>
                 <div className="relative rounded-2xl border border-amber-300/50 bg-amber-200 text-green-900 px-9 py-7">
-                  <div className="text-4xl md:text-5xl font-extrabold tracking-tight">* 435<span className="align-super text-lg md:text-xl font-bold">+</span></div>
-                  <div className="mt-1 text-xs md:text-sm tracking-wide text-green-900/80">Growth Tons' of Harvest</div>
+                  <div className="text-4xl md:text-5xl font-extrabold tracking-tight">
+                    * 435<span className="align-super text-lg md:text-xl font-bold">+</span>
+                  </div>
+                  <div className="mt-1 text-xs md:text-sm tracking-wide text-green-900/80">
+                    Growth Tons' of Harvest
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Right Content Section */}
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-white text-green-900 px-3 py-1 text-[11px] font-semibold shadow-sm border border-green-100">
               <span className="inline-block h-2 w-2 rounded-full bg-green-300" aria-hidden></span>
               Who We Are
             </div>
+
             <h2 className="mt-5 text-4xl md:text-5xl font-semibold text-green-900 leading-tight tracking-tight">
               Currently we are growing
               <br className="hidden md:block" />
               and selling organic food
             </h2>
+
             <p className="mt-4 max-w-prose text-neutral-600">
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
               by injected humour, or randomised words which don’t look even.
             </p>
 
-            
+            {/* Feature Cards */}
             <div className="mt-8 grid sm:grid-cols-2 gap-8">
+              
+              {/* Card 1 */}
               <div className="flex items-start gap-3">
-                <div className="h-10 w-10 rounded-lg bg-green-100 text-green-700 grid place-items-center">
-                  <FiGlobe size={20} />
+                <div className="h-10 w-10 rounded-lg  grid place-items-center overflow-hidden">
+                  <img src="/fence.png" alt="Eco Farms Worldwide" className="h-6 w-6 object-contain" />
                 </div>
                 <div>
-                  <div className="font-semibold text-green-900 underline decoration-green-300/70 underline-offset-4">Eco Farms Worldwide</div>
-                  <div className="text-sm text-neutral-600">Ages of lorem ipsum available majority have suffered.</div>
+                  <div className="font-semibold text-green-900 underline decoration-green-300/70 underline-offset-4">
+                    Eco Farms Worldwide
+                  </div>
+                  <div className="text-sm text-neutral-600">
+                    Ages of lorem ipsum available majority have suffered.
+                  </div>
                 </div>
               </div>
+
+              {/* Card 2 */}
               <div className="flex items-start gap-3">
-                <div className="h-10 w-10 rounded-lg bg-green-100 text-green-700 grid place-items-center">
-                  <FiSettings size={20} />
+                <div className="h-10 w-10 rounded-lg  grid place-items-center overflow-hidden">
+                  <img src="/mow.png" alt="Special Equipment" className="h-6 w-6 object-contain" />
                 </div>
                 <div>
-                  <div className="font-semibold text-green-900 underline decoration-green-300/70 underline-offset-4">Special Equipment</div>
-                  <div className="text-sm text-neutral-600">Ages of lorem ipsum available majority have suffered.</div>
+                  <div className="font-semibold text-green-900 underline decoration-green-300/70 underline-offset-4">
+                    Special Equipment
+                  </div>
+                  <div className="text-sm text-neutral-600">
+                    Ages of lorem ipsum available majority have suffered.
+                  </div>
                 </div>
               </div>
+
+              {/* Card 3 */}
               <div className="flex items-start gap-3 sm:col-span-2">
-                <div className="h-10 w-10 rounded-lg bg-green-100 text-green-700 grid place-items-center">
-                  <FiTruck size={20} />
+                <div className="h-10 w-10 rounded-lg  grid place-items-center overflow-hidden">
+                  <img src="/truck.png" alt="Fast Delivery" className="h-6 w-6 object-contain" />
                 </div>
                 <div>
-                  <div className="font-semibold text-green-900">Fast Delivery</div>
-                  <div className="text-sm text-neutral-600">We deliver fresh produce quickly to keep it at peak quality.</div>
+                  <div className="font-semibold text-green-900">
+                    Fast Delivery
+                  </div>
+                  <div className="text-sm text-neutral-600">
+                    We deliver fresh produce quickly to keep it at peak quality.
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
+        {/* Marquee Section */}
         <div className="mt-16 overflow-hidden">
           <div className="relative">
             <div
@@ -105,6 +136,7 @@ export default function WhoWeAre() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   )
