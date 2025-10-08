@@ -33,8 +33,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <div className="flex items-center gap-2 text-green-900">
-              <img src="/logo.png" alt="logo" className="h-8 w-auto" />
-              <span className="font-semibold text-xl">grimo</span>
+              <img src="/logo.svg.png" alt="logo" className="h-8 w-auto" />
+              
             </div>
             <p className="mt-4 text-sm text-neutral-600 max-w-xs">Mauris sed molestie sem. Sed vel vestibulum elit, non accumsan risus. In vitae sapien viverra est Duo ei ullum inani senserit.</p>
             <div className="mt-4 flex items-center gap-3">
